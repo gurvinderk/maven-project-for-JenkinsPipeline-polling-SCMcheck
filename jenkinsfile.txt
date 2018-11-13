@@ -22,7 +22,7 @@ pipeline {
             post {		
          	   success {
             	echo 'Job to Archive to staging success...'
-            archiveArtifacts artifacts: '**/target/*.war'
+            archiveArtifacts artifacts: '**/*.war'
             }	
             failure
             {
