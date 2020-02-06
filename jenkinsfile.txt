@@ -16,7 +16,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 echo 'Deploying To Staging.....Jenkins job for deploying artifact to stagin called'	
-                build job: '02-Deploy_Artifact_to_staging'
+                build job: '2-Deploy_Artifact_to_staging'
             }
         
             post {		
@@ -41,7 +41,7 @@ pipeline {
                 input message :'Approve Production Deployment?' 
                 }
                 
-                build job: '03-deploy-to-prod'
+                build job: '3-deploy-to-prod'
             }
         
             post {		
